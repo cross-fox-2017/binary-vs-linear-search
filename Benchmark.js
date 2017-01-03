@@ -2,14 +2,13 @@ const Benchmark = require('benchmark')
 var suite = new Benchmark.Suite();
 
 const linearSearch = (target, values) => {
-//write your code here
-for (var i = 0; i < values.length; i++) {
-  if (values[i] == target){
-    return i
+  for (var i = 0; i < values.length; i++) {
+    if (values[i] == target){
+      return i
+    }
   }
-}
-return -1
-}
+  return -1
+  }
 const binarySearch =(search, array, pos = 0) =>{
   // Your code here
   var mid = Math.floor(array.length/2)
